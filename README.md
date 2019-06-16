@@ -7,5 +7,5 @@
 ## Technologies
 
 - **Frontend**: React
-  - **Materialize**
+  - Materialize
 - **Backend**: Node.js
