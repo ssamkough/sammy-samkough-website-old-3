@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import Meta from "./components/pages/Meta";
+import Work from "./components/pages/Work";
+import Hobbies from "./components/pages/Hobbies.js";
+import Contact from "./components/Contact.js";
+import Footer from "./components/Footer.js";
 import { BrowserRouter, Route } from "react-router-dom";
 
 class App extends Component {
@@ -11,9 +13,11 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route exact path="/" component={Meta} />
+          <Route path="/work" component={Work} />
+          <Route path="/hobbies" component={Hobbies} />
+          <Contact />
+          <Footer />
         </div>
       </BrowserRouter>
     );

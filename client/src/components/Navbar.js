@@ -3,18 +3,17 @@ import { NavLink, withRouter } from "react-router-dom";
 
 const Navbar = props => {
   return (
-    <nav className="nav-wrapper red darken-4">
+    <nav className="nav-wrapper z-depth-0 transparent">
       <div className="container">
-        <a className="brand-logo">Sammy Samkough</a>
-        <ul className="right">
+        <ul style={{ display: "flex", justifyContent: "center" }}>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/">Meta</NavLink>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/work">Work</NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/hobbies">Hobbies</NavLink>
           </li>
         </ul>
       </div>
