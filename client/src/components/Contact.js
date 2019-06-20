@@ -3,7 +3,7 @@ import React from "react";
 const Contact = props => {
   return (
     <div className="container center">
-      <h3>Contact Me</h3>
+      <h4>Contact Me</h4>
       <form action="">
         <div className="input-field">
           <i className="material-icons prefix">person</i>

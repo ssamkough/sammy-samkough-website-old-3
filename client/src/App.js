@@ -16,7 +16,6 @@ class App extends Component {
           <Route exact path="/" component={Meta} />
           <Route path="/work" component={Work} />
           <Route path="/hobbies" component={Hobbies} />
-          <Contact />
           <Footer />
         </div>
       </BrowserRouter>

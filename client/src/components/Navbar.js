@@ -1,11 +1,16 @@
 import React from "react";
 import { NavLink, withRouter } from "react-router-dom";
+import logo from "../../src/images/meta-logo.png";
 
 const Navbar = props => {
   return (
     <nav className="nav-wrapper z-depth-0 transparent">
       <div className="container">
-        <ul style={{ display: "flex", justifyContent: "center" }}>
+        <img src={logo} alt="Logo" />
+        <ul
+          className="right"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <li>
             <NavLink to="/">Meta</NavLink>
           </li>
