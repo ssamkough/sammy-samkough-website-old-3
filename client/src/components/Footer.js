@@ -6,7 +6,7 @@ import "../css/Footer.css";
 const Footer = props => {
   return (
     <div className="container">
-      <div className="left">{new Date().getFullYear()} Sammy Samkough</div>
+      {/* <div className="left">{new Date().getFullYear()} Sammy Samkough</div> */}
       <div className="right">
         <a href="https://github.com/ssamkough">
           <GoOctoface />

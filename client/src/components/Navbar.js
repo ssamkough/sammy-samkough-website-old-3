@@ -18,7 +18,6 @@ class Navbar extends Component {
     return (
       <nav className="nav-wrapper z-depth-0 transparent">
         <div className="container">
-          <img src={logo} alt="Logo" />
           <ul
             className="right"
             style={{ display: "flex", justifyContent: "center" }}

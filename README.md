@@ -9,3 +9,10 @@
 - **Frontend**: React
   - Materialize
 - **Backend**: Node.js
+
+## Inspirations
+
+- [andymatuschak.org](https://andymatuschak.org/)
+- [jessieren.com](http://jessieren.com/)
+- [jasonlim.design](http://jasonlim.design/)
+- [tobiasahlin.com](https://tobiasahlin.com/)
