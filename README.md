@@ -1,14 +1,15 @@
-# Sammy Samkough Website
+# Sammy Samkough Website 📚
+[![Website sammysamkough.com](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://sammysamkough.com)
 
-## Preface
+## Preface 🖍️
 
 - My original website was done in Wordpress which didn't make me happy, so now I'm custom building it.
 
-## Technologies
+## Technologies 🕹️
 
 - HTML, CSS, Javascript
 
-## Inspirations
+## Inspirations 🎉
 
 - [andymatuschak.org](https://andymatuschak.org/)
 - [jessieren.com](http://jessieren.com/)
