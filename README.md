@@ -6,9 +6,7 @@
 
 ## Technologies
 
-- **Frontend**: React
-  - Materialize
-- **Backend**: Node.js
+- HTML, CSS, Javascript
 
 ## Inspirations
 
