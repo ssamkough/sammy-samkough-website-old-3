@@ -8,7 +8,7 @@ My original website was done in Wordpress which didn't make me happy, so now I'm
 
 ## Technologies 🕹️
 
-- HTML, CSS, Javascript
+- React
 
 ## Inspirations 🎉
 
