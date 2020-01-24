@@ -13,6 +13,7 @@ My original website was done in Wordpress which didn't make me happy, so now I'm
 ## Inspirations 🎉
 
 - [www.inertiawar.com](http://www.inertiawar.com/)
+- [billwurtz.com](https://billwurtz.com/)
 - [andymatuschak.org](https://andymatuschak.org/)
 - [jessieren.com](http://jessieren.com/)
 - [jasonlim.design](http://jasonlim.design/)
