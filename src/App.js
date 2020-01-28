@@ -22,8 +22,10 @@ function App() {
           <Route path="/notebook" component={Notebook} />
           <Route path="/gallery" component={Gallery} />
         </Switch>
-        <Nav></Nav>
-        <Footer></Footer>
+        <div className="bottom">
+          <Nav></Nav>
+          <Footer></Footer>
+        </div>
       </div>
     </Router>
   );
