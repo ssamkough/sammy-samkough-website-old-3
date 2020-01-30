@@ -6,22 +6,22 @@ function Nav() {
     <div className="nav">
       <ul>
         <li>
-          <Link to="/">home</Link> |
+          <Link to="/">home</Link>
         </li>
         <li>
-          <Link to="/about"> about</Link> |
+          <Link to="/about">about</Link>
         </li>
         <li>
-          <Link to="/projects"> projects</Link> |
+          <Link to="/projects">projects</Link>
         </li>
         <li>
-          <Link to="/services"> services</Link> |
+          <Link to="/services">services</Link>
         </li>
         <li>
-          <Link to="/notebook"> notebook</Link> |
+          <Link to="/notebook">notebook</Link>
         </li>
         <li>
-          <Link to="/Gallery"> gallery</Link>
+          <Link to="/Gallery">gallery</Link>
         </li>
       </ul>
     </div>
