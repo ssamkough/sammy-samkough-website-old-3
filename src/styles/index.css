@@ -67,6 +67,7 @@ a:active {
 .textWall {
   text-align: justify;
   justify-content: center;
+  line-height: 2em;
 }
 
 .logoStyle {
