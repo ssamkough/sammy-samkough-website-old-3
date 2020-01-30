@@ -8,7 +8,12 @@ My original website was done in Wordpress which didn't make me happy, so now I'm
 
 ## Technologies 🕹️
 
-- React
+- [React](https://reactjs.org/)
+
+### Specific
+
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Font Awesome](https://github.com/FortAwesome/react-fontawesome) (icon selection is 🔥)
 
 ## Inspirations 🎉
 
