@@ -21,7 +21,10 @@ function Nav() {
           <Link to="/notebook">notebook</Link>
         </li>
         <li>
-          <Link to="/Gallery">gallery</Link>
+          <Link to="/Photos">photos</Link>
+        </li>
+        <li>
+          <Link to="/Music">music</Link>
         </li>
       </ul>
     </div>

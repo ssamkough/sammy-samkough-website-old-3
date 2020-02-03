@@ -6,7 +6,8 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import Notebook from "./pages/Notebook";
-import Gallery from "./pages/Gallery";
+import Photos from "./pages/Photos";
+import Music from "./pages/Music";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
@@ -20,7 +21,8 @@ function App() {
           <Route path="/projects" component={Projects} />
           <Route path="/services" component={Services} />
           <Route path="/notebook" component={Notebook} />
-          <Route path="/gallery" component={Gallery} />
+          <Route path="/photos" component={Photos} />
+          <Route path="/music" component={Music} />
         </Switch>
         <div className="bottom">
           <Nav></Nav>
