@@ -12,7 +12,7 @@ class Home extends React.Component {
     this.setState({ data: json });
     console.log(this.state.data);
   }
-  
+
   render() {
     return (
       <div className="content">

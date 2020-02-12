@@ -7,13 +7,16 @@ class Notebook extends React.Component {
   }
 
   async componentDidMount() {
-    const response = await fetch(`https://api-sam.herokuapp.com/api/notebook/`, {
-      method: 'GET', 
-      headers: new Headers({
-        'Authorization': `Basic ${process.env.AUTH_HEADER}`,
-        'Content-Type': 'application/x-www-form-urlencoded'
-      })
-    });
+    const response = await fetch(
+      `https://api-sam.herokuapp.com/api/notebook/`,
+      {
+        method: "GET",
+        headers: new Headers({
+          Authorization: `Basic ${process.env.AUTH_HEADER}`,
+          "Content-Type": "application/x-www-form-urlencoded"
+        })
+      }
+    );
     const json = await response.json();
     this.setState({ data: json });
     console.log(this.state.data);

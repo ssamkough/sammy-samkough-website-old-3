@@ -20,18 +20,18 @@ class Photos extends React.Component {
       <div className="content">
         <h2>photos</h2>
         <br></br>
-        <h3>Inspirations</h3>
+        <h3>@samkotos</h3>
+        <ol>
+          <li>N/A</li>
+        </ol>
+        <br></br>
+        <h3>Favorites</h3>
         <ol>
           {this.state.data.map(el => (
             <li>
               {el.name}: {el.price_usd}
             </li>
           ))}
-        </ol>
-        <br></br>
-        <h3>By Me</h3>
-        <ol>
-          <li>N/A</li>
         </ol>
       </div>
     );
