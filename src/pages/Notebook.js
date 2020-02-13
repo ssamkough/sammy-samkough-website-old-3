@@ -1,25 +1,21 @@
 import React from "react";
+import PostList from "../components/posts/PostList";
 
 class Notebook extends React.Component {
-  constructor() {
-    super();
-    this.state = { data: [] };
-  }
+  state = {
+    posts: []
+  };
 
   async componentDidMount() {
     const response = await fetch(
-      `https://api-sam.herokuapp.com/api/notebook/`,
+      `https://sam-api-267023.appspot.com/api/posts`,
       {
-        method: "GET",
-        headers: new Headers({
-          Authorization: `Basic ${process.env.AUTH_HEADER}`,
-          "Content-Type": "application/x-www-form-urlencoded"
-        })
+        crossDomain: true,
+        method: "GET"
       }
     );
     const json = await response.json();
-    this.setState({ data: json });
-    console.log(this.state.data);
+    this.setState({ posts: json.data });
   }
 
   render() {
@@ -27,7 +23,7 @@ class Notebook extends React.Component {
       <div className="content">
         <h2>notebook</h2>
         <br></br>
-        <p>notebook text</p>
+        <PostList posts={this.state.posts} />
       </div>
     );
   }

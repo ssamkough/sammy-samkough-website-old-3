@@ -1,16 +1,17 @@
 import React from "react";
 
 class Home extends React.Component {
-  constructor() {
-    super();
-    this.state = { data: [] };
-  }
+  state = {
+    user: ""
+  };
 
   async componentDidMount() {
-    const response = await fetch(`https://api-sam.herokuapp.com/api/user/`);
+    const response = await fetch(
+      `https://sam-api-267023.appspot.com/api/users/show`
+    );
+
     const json = await response.json();
-    this.setState({ data: json });
-    console.log(this.state.data);
+    this.setState({ user: json.data });
   }
 
   render() {
@@ -18,7 +19,7 @@ class Home extends React.Component {
       <div className="content">
         <h2>sammy samkough</h2>
         <br></br>
-        <p>[description]</p>
+        <p className="tagline">{this.state.user.tagline}</p>
       </div>
     );
   }
