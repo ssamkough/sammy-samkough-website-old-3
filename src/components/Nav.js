@@ -12,13 +12,13 @@ function Nav() {
           <Link to="/about">about</Link>
         </li>
         <li>
+          <Link to="/notebook">notebook</Link>
+        </li>
+        <li>
           <Link to="/projects">projects</Link>
         </li>
         <li>
           <Link to="/services">services</Link>
-        </li>
-        <li>
-          <Link to="/notebook">notebook</Link>
         </li>
         <li>
           <Link to="/Photos">photos</Link>
