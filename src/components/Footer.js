@@ -18,14 +18,18 @@ function Footer() {
           </a>
         </li>
         <li className="handle">
-          <a target="_blank" rel="noopener" href="https://github.com/ssamkough">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/ssamkough"
+          >
             <FontAwesomeIcon icon={faGithubAlt} size="lg" />
           </a>
         </li>
         <li className="handle">
           <a
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             href="https://linkedin.com/in/ssamkough"
           >
             <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
@@ -34,7 +38,7 @@ function Footer() {
         <li className="handle">
           <a
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             href="https://twitter.com/ssamkough"
           >
             <FontAwesomeIcon icon={faTwitter} size="lg" />
@@ -43,7 +47,7 @@ function Footer() {
         <li className="handle">
           <a
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             href="https://instagram.com/samkotos"
           >
             <FontAwesomeIcon icon={faInstagram} size="lg" />
