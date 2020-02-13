@@ -74,3 +74,7 @@ a:active {
   width: 20px;
   height: 20px;
 }
+
+.tagline {
+  font-style: italic;
+}
