@@ -17,7 +17,7 @@ class Photos extends React.Component {
 
   render() {
     return (
-      <div className="content">
+      <div>
         <h2>photos</h2>
         <br></br>
         <h3>@samkotos</h3>

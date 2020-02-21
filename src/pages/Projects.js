@@ -7,20 +7,17 @@ class Projects extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await fetch(
-      `https://sam-api-267023.appspot.com/api/projects`,
-      {
-        crossDomain: true,
-        method: "GET"
-      }
-    );
+    const response = await fetch(`https://api.sammysamkough.com/api/projects`, {
+      crossDomain: true,
+      method: "GET"
+    });
     const json = await response.json();
     this.setState({ projects: json.data });
   }
 
   render() {
     return (
-      <div className="content">
+      <div>
         <h2>projects</h2>
         <br></br>
         <PostList projects={this.state.projects} />

@@ -7,7 +7,7 @@ class Home extends React.Component {
 
   async componentDidMount() {
     const response = await fetch(
-      `https://sam-api-267023.appspot.com/api/users/show`
+      `https://api.sammysamkough.com/api/users/show`
     );
 
     const json = await response.json();
@@ -16,7 +16,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="content">
+      <div>
         <h2>sammy samkough</h2>
         <br></br>
         <p className="tagline">{this.state.user.tagline}</p>

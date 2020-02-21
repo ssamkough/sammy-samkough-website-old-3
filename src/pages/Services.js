@@ -7,20 +7,17 @@ class Services extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await fetch(
-      `https://sam-api-267023.appspot.com/api/services`,
-      {
-        crossDomain: true,
-        method: "GET"
-      }
-    );
+    const response = await fetch(`https://api.sammysamkough.com/api/services`, {
+      crossDomain: true,
+      method: "GET"
+    });
     const json = await response.json();
     this.setState({ services: json.data });
   }
 
   render() {
     return (
-      <div className="content">
+      <div>
         <h2>services</h2>
         <br></br>
         <PostList services={this.state.services} />

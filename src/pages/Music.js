@@ -23,7 +23,7 @@ class Music extends React.Component {
 
   render() {
     return (
-      <div className="content">
+      <div>
         <h2>music</h2>
         <br></br>
         <h3>Listens</h3>
