@@ -17,9 +17,22 @@ a:active {
 
 /* UTILITIES */
 
-.App {
+.app {
   height: 100vh;
-  position: relative;
+  width: 100vw;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+.nav ul {
+  list-style-type: none;
+}
+
+.nav li {
+  display: inline;
+  margin: 10px;
 }
 
 .content {
@@ -30,25 +43,21 @@ a:active {
   text-align: center;
 }
 
+.textWall {
+  text-align: justify;
+  justify-content: center;
+  line-height: 2em;
+}
+
+.tagline {
+  font-style: italic;
+}
+
 .bottom {
-  position: fixed;
-  text-align: center;
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.nav {
-  margin-bottom: 2.5vh;
-}
-
-.nav ul {
-  list-style-type: none;
-}
-
-.nav li {
-  display: inline;
-  margin: 10px;
 }
 
 .footer ul {
@@ -64,17 +73,7 @@ a:active {
   margin-bottom: 0.5vh;
 }
 
-.textWall {
-  text-align: justify;
-  justify-content: center;
-  line-height: 2em;
-}
-
 .logoStyle {
   width: 20px;
   height: 20px;
-}
-
-.tagline {
-  font-style: italic;
 }
