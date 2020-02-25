@@ -19,12 +19,12 @@ function App() {
     <Router>
       <Container className="app">
         <Row className="header justify-content-md-center">
-          <Col>
+          <Col md="auto">
             <Nav></Nav>
           </Col>
         </Row>
-        <Row className="content">
-          <Col>
+        <Row className="content justify-content-md-center">
+          <Col md="auto">
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/about" component={About} />
@@ -36,8 +36,8 @@ function App() {
             </Switch>
           </Col>
         </Row>
-        <Row className="bottom">
-          <Col>
+        <Row className="bottom justify-content-md-center">
+          <Col md="auto">
             <Footer></Footer>
           </Col>
         </Row>
