@@ -12,6 +12,7 @@ class About extends React.Component {
 
     const json = await response.json();
     this.setState({ user: json.data });
+    console.log(this.state.user);
   }
 
   render() {
