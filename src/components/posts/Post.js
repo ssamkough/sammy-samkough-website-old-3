@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 
 const PostSummary = ({ post }) => {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card className="post">
       <Card.Body>
         <Card.Header>{post.date}</Card.Header>
         <Card.Title>{post.title}</Card.Title>
