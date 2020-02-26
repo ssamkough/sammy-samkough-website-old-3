@@ -1,19 +1,23 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-const ServiceSummary = ({ service }) => {
+const Service = ({ service }) => {
   return (
-    <Card className="service">
-      <Card.Body>
-        <Card.Header>{service.date}</Card.Header>
-        <Card.Title>{service.title}</Card.Title>
-        <Card.Text>{service.content}</Card.Text>
-        <Button variant="primary">View Service</Button>
-        <Card.Footer>{service.tags}</Card.Footer>
-      </Card.Body>
-    </Card>
+    <Container>
+      <Row>
+        <Col>Title</Col>
+      </Row>
+      <Row>
+        <Col>Content</Col>
+      </Row>
+      <Row>
+        <Col>Date</Col>
+        <Col>Tags</Col>
+      </Row>
+    </Container>
   );
 };
 
-export default ServiceSummary;
+export default Service;

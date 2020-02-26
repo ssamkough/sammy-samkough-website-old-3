@@ -1,12 +1,12 @@
 import React from "react";
-import Project from "./Project";
+import ProjectItem from "./ProjectItem";
 
 const ProjectList = ({ projects }) => {
   return (
     <div className="project-list section">
       {projects &&
         projects.map(project => {
-          return <Project project={project} key={project.title} />;
+          return <ProjectItem project={project} key={project.path} />;
         })}
     </div>
   );
