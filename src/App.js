@@ -23,7 +23,7 @@ function App() {
             <Nav></Nav>
           </Col>
         </Row>
-        <Row className="content justify-content-md-center">
+        <Row className="content justify-content-md-center align-items-center">
           <Col md="auto">
             <Switch>
               <Route path="/" exact component={Home} />
