@@ -1,24 +1,14 @@
 import React from "react";
 
 class Music extends React.Component {
-  constructor() {
-    super();
-    this.state = { data: [] };
-  }
+  state = {
+    user: ""
+  };
 
   async componentDidMount() {
-    const response = await fetch(
-      `https://accounts.spotify.com/authorize?client_id=${process.env.SPOTIFY_CLIENT_ID}&response_type=code&redirect_uri=${process.env.SPOTIFY_REDIRECT_URI}`
-    );
-    const json = await response.json();
-    this.setState({ data: json });
-    console.log(this.state.data);
-    // const response = await fetch(
-    //   `https://api.spotify.com/v1/users/${process.env.SPOTIFY_USER_ID}/playlists`
-    // );
-    // const json = await response.json();
-    // this.setState({ data: json });
-    // console.log(this.state.data);
+    // GET https://api.sammysamkough.com/api/spotify_token
+    // GET https://api.spotify.com/v1/users/{user_id}/playlists
+    // GET https://api.spotify.com/v1/me/player/recently-played
   }
 
   render() {
@@ -26,14 +16,7 @@ class Music extends React.Component {
       <div>
         <h2>music</h2>
         <br></br>
-        <h3>Listens</h3>
-        <ol>
-          {this.state.data.map(el => (
-            <li>
-              {el.name}: {el.price_usd}
-            </li>
-          ))}
-        </ol>
+        <p>N/A</p>
       </div>
     );
   }
