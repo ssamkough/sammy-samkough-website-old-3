@@ -1,5 +1,7 @@
 import React from "react";
-import PostList from "../components/posts/PostList";
+import axios from "axios";
+
+import ServiceList from "../components/services/ServiceList";
 
 class Services extends React.Component {
   state = {
@@ -7,12 +9,12 @@ class Services extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await fetch(`https://api.sammysamkough.com/api/services`, {
-      crossDomain: true,
-      method: "GET"
+    const response = await axios({
+      method: "get",
+      url: `https://api.sammysamkough.com/api/services`
     });
-    const json = await response.json();
-    this.setState({ services: json.data });
+
+    this.setState({ services: response.data.data });
   }
 
   render() {
@@ -20,7 +22,7 @@ class Services extends React.Component {
       <div>
         <h2>services</h2>
         <br></br>
-        <PostList services={this.state.services} />
+        <ServiceList services={this.state.services} />
       </div>
     );
   }

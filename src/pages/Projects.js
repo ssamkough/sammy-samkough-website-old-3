@@ -1,5 +1,7 @@
 import React from "react";
-import PostList from "../components/posts/PostList";
+import axios from "axios";
+
+import ProjectList from "../components/projects/ProjectList";
 
 class Projects extends React.Component {
   state = {
@@ -7,12 +9,12 @@ class Projects extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await fetch(`https://api.sammysamkough.com/api/projects`, {
-      crossDomain: true,
-      method: "GET"
+    const response = await axios({
+      method: "get",
+      url: `https://api.sammysamkough.com/api/projects`
     });
-    const json = await response.json();
-    this.setState({ projects: json.data });
+
+    this.setState({ projects: response.data.data });
   }
 
   render() {
@@ -20,7 +22,7 @@ class Projects extends React.Component {
       <div>
         <h2>projects</h2>
         <br></br>
-        <PostList projects={this.state.projects} />
+        <ProjectList projects={this.state.projects} />
       </div>
     );
   }

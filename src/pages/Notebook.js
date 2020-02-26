@@ -1,4 +1,6 @@
 import React from "react";
+import axios from "axios";
+
 import PostList from "../components/posts/PostList";
 
 class Notebook extends React.Component {
@@ -7,12 +9,12 @@ class Notebook extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await fetch(`https://api.sammysamkough.com/api/posts`, {
-      crossDomain: true,
-      method: "GET"
+    const response = await axios({
+      method: "get",
+      url: `https://api.sammysamkough.com/api/posts`
     });
-    const json = await response.json();
-    this.setState({ posts: json.data });
+
+    this.setState({ posts: response.data.data });
   }
 
   render() {
