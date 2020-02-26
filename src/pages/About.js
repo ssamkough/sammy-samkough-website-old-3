@@ -1,18 +1,17 @@
 import React from "react";
+import axios from "axios";
 
 class About extends React.Component {
-  state = {
-    user: ""
-  };
+  state = { sentences: [] };
 
   async componentDidMount() {
-    const response = await fetch(
-      `https://api.sammysamkough.com/api/users/show`
-    );
+    const response = await axios({
+      method: "get",
+      url: "https://api.sammysamkough.com/api/users/show"
+    });
 
-    const json = await response.json();
-    this.setState({ user: json.data });
-    console.log(this.state.user);
+    const sentences = response.data.data.about_me.split(";");
+    this.setState({ sentences: [...sentences] });
   }
 
   render() {
@@ -20,7 +19,12 @@ class About extends React.Component {
       <div>
         <h2>about</h2>
         <br></br>
-        <p className="textWall">{this.state.user.about_me}</p>
+        <div className="textWall">
+          {this.state.sentences &&
+            this.state.sentences.map(sentence => {
+              return <p key={sentence.toString()}>{sentence}</p>;
+            })}
+        </div>
       </div>
     );
   }
