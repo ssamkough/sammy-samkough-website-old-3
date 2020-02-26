@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 class Home extends React.Component {
   state = {
@@ -6,17 +7,17 @@ class Home extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await fetch(
-      `https://api.sammysamkough.com/api/users/show`
-    );
+    const response = await axios({
+      method: "get",
+      url: `https://api.sammysamkough.com/api/users/show`
+    });
 
-    const json = await response.json();
-    this.setState({ user: json.data });
+    this.setState({ user: response.data.data });
   }
 
   render() {
     return (
-      <div>
+      <div className="home-content">
         <h2>sammy samkough</h2>
         <br></br>
         <p className="tagline">{this.state.user.tagline}</p>
