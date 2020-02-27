@@ -14,7 +14,7 @@ class Services extends React.Component {
       url: `https://api.sammysamkough.com/api/services`
     });
 
-    this.setState({ services: response.data.data });
+    this.setState({ services: response.data.data.reverse() });
   }
 
   render() {

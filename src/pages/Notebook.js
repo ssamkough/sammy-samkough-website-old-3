@@ -14,7 +14,7 @@ class Notebook extends React.Component {
       url: `https://api.sammysamkough.com/api/posts`
     });
 
-    this.setState({ posts: response.data.data });
+    this.setState({ posts: response.data.data.reverse() });
   }
 
   render() {

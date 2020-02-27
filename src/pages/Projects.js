@@ -14,7 +14,7 @@ class Projects extends React.Component {
       url: `https://api.sammysamkough.com/api/projects`
     });
 
-    this.setState({ projects: response.data.data });
+    this.setState({ projects: response.data.data.reverse() });
   }
 
   render() {
