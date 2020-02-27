@@ -19,13 +19,13 @@ function App() {
   return (
     <Router>
       <Container className="app">
-        <Row className="header justify-content-md-center">
-          <Col md="auto">
+        <Row className="header justify-content-center">
+          <Col sm="auto" md="auto">
             <Nav></Nav>
           </Col>
         </Row>
-        <Row className="content justify-content-md-center align-items-center">
-          <Col md="auto">
+        <Row className="content justify-content-center align-items-center">
+          <Col sm="auto" md="auto">
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
@@ -40,8 +40,8 @@ function App() {
             </Switch>
           </Col>
         </Row>
-        <Row className="bottom justify-content-md-center">
-          <Col md="auto">
+        <Row className="bottom justify-content-center">
+          <Col sm="auto" md="auto">
             <Footer></Footer>
           </Col>
         </Row>
