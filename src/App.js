@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -29,7 +27,7 @@ function App() {
         <Row className="content justify-content-md-center align-items-center">
           <Col md="auto">
             <Switch>
-              <Route exact path="/" exact component={Home} />
+              <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/notebook" component={Notebook} />
               <Route path="/post/:path" component={Post} />
