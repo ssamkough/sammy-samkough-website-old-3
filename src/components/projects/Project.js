@@ -3,18 +3,19 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const Project = () => {
+const Project = props => {
+  const project = props.location.state;
   return (
     <Container>
       <Row>
-        <Col>Title</Col>
+        <Col>{project.title}</Col>
       </Row>
       <Row>
-        <Col>Content</Col>
+        <Col>{project.content}</Col>
       </Row>
       <Row>
-        <Col>Date</Col>
-        <Col>Tags</Col>
+        <Col>{project.date}</Col>
+        <Col>{project.tags}</Col>
       </Row>
     </Container>
   );

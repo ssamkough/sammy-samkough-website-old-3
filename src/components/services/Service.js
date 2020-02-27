@@ -3,18 +3,19 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const Service = ({ service }) => {
+const Service = props => {
+  const service = props.location.state;
   return (
     <Container>
       <Row>
-        <Col>Title</Col>
+        <Col>{service.title}</Col>
       </Row>
       <Row>
-        <Col>Content</Col>
+        <Col>{service.content}</Col>
       </Row>
       <Row>
-        <Col>Date</Col>
-        <Col>Tags</Col>
+        <Col>{service.date}</Col>
+        <Col>{service.tags}</Col>
       </Row>
     </Container>
   );

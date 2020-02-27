@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 
 const PostItem = ({ post }) => {
   return (
-    <Card className="post">
+    <Card className="entity-card post">
+      <Card.Header>{post.date}</Card.Header>
       <Card.Body>
-        <Card.Header>{post.date}</Card.Header>
         <Card.Title>{post.title}</Card.Title>
         <Card.Text>{post.content}</Card.Text>
-        <Button variant="primary">
-          <Link to={"/post/" + post.path}>View Post</Link>
+        <Button variant="outline-secondary">
+          <Link to={{ pathname: "/post/" + post.path, state: post }}>
+            View Post
+          </Link>
         </Button>
-        <Card.Footer>{post.tags}</Card.Footer>
       </Card.Body>
+      <Card.Footer>{post.tags}</Card.Footer>
     </Card>
   );
 };

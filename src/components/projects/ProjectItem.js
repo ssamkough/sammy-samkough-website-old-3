@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 
 const ProjectItem = ({ project }) => {
   return (
-    <Card className="project">
+    <Card className="entity-card project">
+      <Card.Header>{project.date}</Card.Header>
       <Card.Body>
-        <Card.Header>{project.date}</Card.Header>
         <Card.Title>{project.title}</Card.Title>
         <Card.Text>{project.content}</Card.Text>
-        <Button variant="primary">
-          <Link to={"/project/" + project.path}>View Project</Link>
+        <Button variant="outline-secondary">
+          <Link to={{ pathname: "/project/" + project.path, state: project }}>
+            View Project
+          </Link>
         </Button>
-        <Card.Footer>{project.tags}</Card.Footer>
       </Card.Body>
+      <Card.Footer>{project.tags}</Card.Footer>
     </Card>
   );
 };

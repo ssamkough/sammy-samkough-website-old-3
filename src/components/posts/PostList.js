@@ -1,6 +1,5 @@
 import React from "react";
 import PostItem from "./PostItem";
-import { Link } from "react-router-dom";
 
 const PostList = ({ posts }) => {
   return (
