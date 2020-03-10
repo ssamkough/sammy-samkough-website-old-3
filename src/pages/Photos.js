@@ -17,7 +17,7 @@ class Photos extends React.Component {
         <h5>
           <a href="http://instagram.com/samkotos">@samkotos</a>
         </h5>
-        <p>N/A</p>
+        <p>Photos Coming Soon :)</p>
       </div>
     );
   }

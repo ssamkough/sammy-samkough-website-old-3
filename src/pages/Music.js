@@ -19,7 +19,7 @@ class Music extends React.Component {
         <h5>
           <a href="https://open.spotify.com/user/samkough">@samkough</a>
         </h5>
-        <p>N/A</p>
+        <p>Music Coming Soon :)</p>
       </div>
     );
   }
