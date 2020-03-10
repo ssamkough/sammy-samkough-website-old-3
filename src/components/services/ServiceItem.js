@@ -10,11 +10,9 @@ const ServiceItem = ({ service }) => {
       <Card.Body>
         <Card.Title>{service.title}</Card.Title>
         <Card.Text>{service.content}</Card.Text>
-        <Button variant="outline-secondary">
-          <Link to={{ pathname: "/service/" + service.path, state: service }}>
-            View Service
-          </Link>
-        </Button>
+        <Link to={{ pathname: "/service/" + service.path, state: service }}>
+          <Button variant="outline-secondary">View Service</Button>
+        </Link>
       </Card.Body>
       <Card.Footer>{service.tags}</Card.Footer>
     </Card>

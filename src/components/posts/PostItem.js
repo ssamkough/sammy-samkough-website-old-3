@@ -10,11 +10,9 @@ const PostItem = ({ post }) => {
       <Card.Body>
         <Card.Title>{post.title}</Card.Title>
         <Card.Text>{post.content}</Card.Text>
-        <Button variant="outline-secondary">
-          <Link to={{ pathname: "/post/" + post.path, state: post }}>
-            View Post
-          </Link>
-        </Button>
+        <Link to={{ pathname: "/post/" + post.path, state: post }}>
+          <Button variant="outline-secondary">View Post</Button>
+        </Link>
       </Card.Body>
       <Card.Footer>{post.tags}</Card.Footer>
     </Card>

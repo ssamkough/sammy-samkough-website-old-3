@@ -10,11 +10,9 @@ const ProjectItem = ({ project }) => {
       <Card.Body>
         <Card.Title>{project.title}</Card.Title>
         <Card.Text>{project.content}</Card.Text>
-        <Button variant="outline-secondary">
-          <Link to={{ pathname: "/project/" + project.path, state: project }}>
-            View Project
-          </Link>
-        </Button>
+        <Link to={{ pathname: "/project/" + project.path, state: project }}>
+          <Button variant="outline-secondary">View Project</Button>
+        </Link>
       </Card.Body>
       <Card.Footer>{project.tags}</Card.Footer>
     </Card>
