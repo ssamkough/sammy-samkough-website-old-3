@@ -12,7 +12,7 @@ class Photos extends React.Component {
   render() {
     return (
       <div>
-        <h2>photos</h2>
+        <h3>photos</h3>
         <br></br>
         <h5>
           <a href="http://instagram.com/samkotos">@samkotos</a>

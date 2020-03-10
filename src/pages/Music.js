@@ -14,7 +14,7 @@ class Music extends React.Component {
   render() {
     return (
       <div>
-        <h2>music</h2>
+        <h3>music</h3>
         <br></br>
         <h5>
           <a href="https://open.spotify.com/user/samkough">@samkough</a>

@@ -18,7 +18,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <h2>sammy samkough</h2>
+        <h3>sammy samkough</h3>
         <br></br>
         <p className="tagline">{this.state.user.tagline}</p>
       </div>

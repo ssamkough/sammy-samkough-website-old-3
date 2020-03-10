@@ -42,13 +42,13 @@ const About = () => {
     <Container>
       <Row>
         <Col>
-          <h2>about</h2>
+          <h3>about</h3>
           <br></br>
           {isError && <div>Something Went Wrong! Fixing it Right Away!</div>}
           {isLoading ? (
             <div>About Me Coming Soon :)</div>
           ) : (
-            <div className="textWall">
+            <div className="text-wall">
               {about &&
                 about.map(sentence => {
                   return <p key={sentence.toString()}>{sentence}</p>;
