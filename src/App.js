@@ -9,14 +9,14 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Notebook from "./pages/Notebook";
-import Projects from "./pages/Projects";
-import Services from "./pages/Services";
+import Notebook from "./pages/posts/Notebook";
+import Projects from "./pages/projects/Projects";
+import Services from "./pages/services/Services";
 import Photos from "./pages/Photos";
 import Music from "./pages/Music";
-import Post from "./components/posts/Post";
-import Project from "./components/projects/Project";
-import Service from "./components/services/Service";
+import PostDetails from "./pages/posts/PostDetails";
+import ProjectDetails from "./pages/projects/ProjectDetails";
+import ServiceDetails from "./pages/services/ServiceDetails";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import resume from "./assets/resume.pdf";
@@ -31,16 +31,16 @@ const App = () => {
           </Col>
         </Row>
         <Row className="content justify-content-center align-items-center">
-          <Col sm="auto" md="auto">
+          <Col>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/notebook" component={Notebook} />
-              <Route path="/post/:path" component={Post} />
+              <Route path="/post/:path" component={PostDetails} />
               <Route path="/projects" component={Projects} />
-              <Route path="/project/:path" component={Project} />
+              <Route path="/project/:path" component={ProjectDetails} />
               <Route path="/services" component={Services} />
-              <Route path="/service/:path" component={Service} />
+              <Route path="/service/:path" component={ServiceDetails} />
               <Route path="/photos" component={Photos} />
               <Route path="/music" component={Music} />
               <Redirect from="/resume" to={resume} />
