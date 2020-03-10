@@ -4,10 +4,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import PostList from "../components/posts/PostList";
+import ProjectList from "../../components/projects/ProjectList";
 
 const useFetch = (initialData, initialUrl) => {
-  const [posts, setPosts] = useState(initialData);
+  const [projects, setProjects] = useState(initialData);
   const [url] = useState(initialUrl);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -19,38 +19,40 @@ const useFetch = (initialData, initialUrl) => {
 
       try {
         const response = await axios(url);
-        const postList = response.data.data.reverse();
-        setPosts(postList);
+        const projectList = response.data.data.reverse();
+        setProjects(projectList);
+
+        if (projectList.length > 0) {
+          setIsLoading(false);
+        }
       } catch (error) {
         setIsError(error);
       }
-
-      setIsLoading(false);
     };
 
     fetchData();
   }, [url]);
 
-  return [{ posts, isLoading, isError }];
+  return [{ projects, isLoading, isError }];
 };
 
-const Notebook = () => {
-  const [{ posts, isLoading, isError }] = useFetch(
+const Projects = () => {
+  const [{ projects, isLoading, isError }] = useFetch(
     [],
-    "https://api.sammysamkough.com/api/posts"
+    "https://api.sammysamkough.com/api/projects"
   );
 
   return (
     <Container>
-      <Row>
-        <Col>
-          <h2>notebook</h2>
+      <Row className="justify-content-center align-items-center">
+        <Col sm="auto" md="auto" lg="auto">
+          <h3>projects</h3>
           <br></br>
           {isError && <div>Something Went Wrong! Fixing it Right Away!</div>}
           {isLoading ? (
-            <div>Posts Coming Soon :)</div>
+            <div>Projects Coming Soon :)</div>
           ) : (
-            <PostList posts={posts} />
+            <ProjectList projects={projects} />
           )}
         </Col>
       </Row>
@@ -58,4 +60,4 @@ const Notebook = () => {
   );
 };
 
-export default Notebook;
+export default Projects;
