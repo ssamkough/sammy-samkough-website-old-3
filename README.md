@@ -23,3 +23,7 @@ My original website was done in Wordpress which didn't make me happy, so now I'm
 - [jessieren.com](http://jessieren.com/)
 - [jasonlim.design](http://jasonlim.design/)
 - [tobiasahlin.com](https://tobiasahlin.com/)
+
+## Resources 🔖
+
+- [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
