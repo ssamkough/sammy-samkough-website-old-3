@@ -36,12 +36,24 @@ a:active {
   margin-bottom: 2vh;
 }
 
-.textWall {
+.text-wall {
   text-align: center;
   justify-content: center;
   line-height: 2em;
   margin-left: 10vw;
   margin-right: 10vw;
+}
+
+.entity-text-wall {
+  text-align: left;
+  line-height: 2em;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.entity-details-divider {
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .tagline {
