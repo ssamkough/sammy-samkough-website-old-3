@@ -17,7 +17,7 @@ import Music from "./pages/Music";
 import Post from "./components/posts/Post";
 import Project from "./components/projects/Project";
 import Service from "./components/services/Service";
-import Nav from "./components/Nav";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import resume from "./assets/resume.pdf";
 
@@ -25,9 +25,9 @@ const App = () => {
   return (
     <Router>
       <Container className="app">
-        <Row className="header justify-content-center">
-          <Col sm="auto" md="auto">
-            <Nav></Nav>
+        <Row className="header">
+          <Col sm="auto" md="auto" lg="auto">
+            <NavBar></NavBar>
           </Col>
         </Row>
         <Row className="content justify-content-center align-items-center">
