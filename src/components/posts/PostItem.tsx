@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-const PostItem = ({ post }) => {
+const PostItem = ({ post }: { post: any }) => {
   return (
     <Card className="entity-card post">
       <Card.Header>{post.date}</Card.Header>

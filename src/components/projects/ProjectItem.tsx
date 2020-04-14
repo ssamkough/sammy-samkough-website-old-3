@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-const ProjectItem = ({ project }) => {
+const ProjectItem = ({ project }: { project: any }) => {
   return (
     <Card className="entity-card project">
       <Card.Header>{project.date}</Card.Header>

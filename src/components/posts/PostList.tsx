@@ -5,13 +5,13 @@ import Col from "react-bootstrap/Col";
 
 import PostItem from "./PostItem";
 
-const PostList = ({ posts }) => {
+const PostList = ({ posts }: { posts: any }) => {
   return (
     <Container>
       <Row>
         <Col className="justify-content-center align-items-center">
           {posts &&
-            posts.map(post => {
+            posts.map((post: any) => {
               return <PostItem post={post} key={post.path} />;
             })}
         </Col>

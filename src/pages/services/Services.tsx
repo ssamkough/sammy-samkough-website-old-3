@@ -4,10 +4,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import PostList from "../../components/posts/PostList";
+import ServiceList from "../../components/services/ServiceList";
 
-const useFetch = (initialData, initialUrl) => {
-  const [posts, setPosts] = useState(initialData);
+const useFetch = (
+  { initialData }: { initialData: any },
+  { initialUrl }: { initialUrl: any }
+) => {
+  const [services, setServices] = useState(initialData);
   const [url] = useState(initialUrl);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -19,10 +22,10 @@ const useFetch = (initialData, initialUrl) => {
 
       try {
         const response = await axios(url);
-        const postList = response.data.data.reverse();
-        setPosts(postList);
+        const serviceList = response.data.data.reverse();
+        setServices(serviceList);
 
-        if (postList.length > 0) {
+        if (serviceList.length > 0) {
           setIsLoading(false);
         }
       } catch (error) {
@@ -33,26 +36,26 @@ const useFetch = (initialData, initialUrl) => {
     fetchData();
   }, [url]);
 
-  return [{ posts, isLoading, isError }];
+  return [{ services, isLoading, isError }];
 };
 
-const Notebook = () => {
-  const [{ posts, isLoading, isError }] = useFetch(
-    [],
-    "https://api.sammysamkough.com/api/posts"
-  );
+const Services = () => {
+  const results: any = [];
+  const url: any = "https://api.sammysamkough.com/api/services";
+
+  const [{ services, isLoading, isError }] = useFetch(results, url);
 
   return (
     <Container>
       <Row className="justify-content-center align-items-center">
         <Col sm="auto" md="auto" lg="auto">
-          <h3>notebook</h3>
+          <h3>services</h3>
           <br></br>
           {isError && <div>Something Went Wrong! Fixing it Right Away!</div>}
           {isLoading ? (
-            <div>Posts Coming Soon :)</div>
+            <div>Services Coming Soon :)</div>
           ) : (
-            <PostList posts={posts} />
+            <ServiceList services={services} />
           )}
         </Col>
       </Row>
@@ -60,4 +63,4 @@ const Notebook = () => {
   );
 };
 
-export default Notebook;
+export default Services;

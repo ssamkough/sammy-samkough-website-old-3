@@ -6,7 +6,10 @@ import Col from "react-bootstrap/Col";
 
 import ProjectList from "../../components/projects/ProjectList";
 
-const useFetch = (initialData, initialUrl) => {
+const useFetch = (
+  { initialData }: { initialData: any },
+  { initialUrl }: { initialUrl: any }
+) => {
   const [projects, setProjects] = useState(initialData);
   const [url] = useState(initialUrl);
   const [isLoading, setIsLoading] = useState(false);
@@ -37,10 +40,10 @@ const useFetch = (initialData, initialUrl) => {
 };
 
 const Projects = () => {
-  const [{ projects, isLoading, isError }] = useFetch(
-    [],
-    "https://api.sammysamkough.com/api/projects"
-  );
+  const results: any = [];
+  const url: any = "https://api.sammysamkough.com/api/projects";
+
+  const [{ projects, isLoading, isError }] = useFetch(results, url);
 
   return (
     <Container>

@@ -3,7 +3,7 @@ import axios from "axios";
 
 class Home extends React.Component {
   state = {
-    user: ""
+    tagline: ""
   };
 
   async componentDidMount() {
@@ -12,7 +12,7 @@ class Home extends React.Component {
       url: `https://api.sammysamkough.com/api/users/show`
     });
 
-    this.setState({ user: response.data.data });
+    this.setState({ tagline: response.data.data.tagline });
   }
 
   render() {
@@ -20,7 +20,7 @@ class Home extends React.Component {
       <div>
         <h3>sammy samkough</h3>
         <br></br>
-        <p className="tagline">{this.state.user.tagline}</p>
+        <p className="tagline">{this.state.tagline}</p>
       </div>
     );
   }

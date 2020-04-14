@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const Post = props => {
+const Post = ({ props }: { props: any }) => {
   const post = props.location.state;
   return (
     <Container>
@@ -23,7 +23,7 @@ const Post = props => {
         <Col>
           <div>
             {post.tags &&
-              post.tags.map(tag => {
+              post.tags.map((tag: any) => {
                 return (
                   <span post-tag={tag} key={tag.toString()}>
                     {tag}{" "}

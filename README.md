@@ -9,6 +9,7 @@ My original website was done in Wordpress which didn't make me happy, so now I'm
 ## Technologies 🕹️
 
 - [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/index.html)
 
 ### Specific
 
@@ -27,3 +28,4 @@ My original website was done in Wordpress which didn't make me happy, so now I'm
 ## Resources 🔖
 
 - [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
+- [Migrating from JavaScript](https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html)

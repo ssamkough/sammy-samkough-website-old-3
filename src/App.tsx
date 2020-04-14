@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Home from "./pages/Home";
@@ -19,7 +14,6 @@ import ProjectDetails from "./pages/projects/ProjectDetails";
 import ServiceDetails from "./pages/services/ServiceDetails";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import resume from "./assets/resume.pdf";
 
 const App = () => {
   return (
@@ -43,7 +37,6 @@ const App = () => {
               <Route path="/service/:path" component={ServiceDetails} />
               <Route path="/photos" component={Photos} />
               <Route path="/music" component={Music} />
-              <Redirect from="/resume" to={resume} />
             </Switch>
           </Col>
         </Row>

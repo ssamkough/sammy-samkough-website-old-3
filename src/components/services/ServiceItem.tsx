@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-const ServiceItem = ({ service }) => {
+const ServiceItem = ({ service }: { service: any }) => {
   return (
     <Card className="entity-card service">
       <Card.Header>{service.date}</Card.Header>

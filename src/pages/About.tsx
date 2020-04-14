@@ -4,7 +4,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const useFetch = (initialData, initialUrl) => {
+const useFetch = (
+  { initialData }: { initialData: any },
+  { initialUrl }: { initialUrl: any }
+) => {
   const [about, setAbout] = useState(initialData);
   const [url] = useState(initialUrl);
   const [isLoading, setIsLoading] = useState(false);
@@ -33,10 +36,10 @@ const useFetch = (initialData, initialUrl) => {
 };
 
 const About = () => {
-  const [{ about, isLoading, isError }] = useFetch(
-    [],
-    "https://api.sammysamkough.com/api/users/show"
-  );
+  const results: any = [];
+  const url: any = "https://api.sammysamkough.com/api/users/show";
+
+  const [{ about, isLoading, isError }] = useFetch(results, url);
 
   return (
     <Container>
@@ -50,7 +53,7 @@ const About = () => {
           ) : (
             <div className="text-wall">
               {about &&
-                about.map(sentence => {
+                about.map((sentence: any) => {
                   return <p key={sentence.toString()}>{sentence}</p>;
                 })}
             </div>

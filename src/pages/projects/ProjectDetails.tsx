@@ -3,22 +3,22 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const Service = props => {
-  const service = props.location.state;
+const Project = ({ props }: { props: any }) => {
+  const project = props.location.state;
   return (
     <Container>
       <Row>
-        <Col>{service.title}</Col>
+        <Col>{project.title}</Col>
       </Row>
       <Row>
-        <Col>{service.content}</Col>
+        <Col>{project.content}</Col>
       </Row>
       <Row>
-        <Col>{service.date}</Col>
-        <Col>{service.tags}</Col>
+        <Col>{project.date}</Col>
+        <Col>{project.tags}</Col>
       </Row>
     </Container>
   );
 };
 
-export default Service;
+export default Project;

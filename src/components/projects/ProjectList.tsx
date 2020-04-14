@@ -3,16 +3,16 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import ServiceItem from "./ServiceItem";
+import ProjectItem from "./ProjectItem";
 
-const ServiceList = ({ services }) => {
+const ProjectList = ({ projects }: { projects: any }) => {
   return (
     <Container>
       <Row>
         <Col className="justify-content-center align-items-center">
-          {services &&
-            services.map(service => {
-              return <ServiceItem service={service} key={service.path} />;
+          {projects &&
+            projects.map((project: any) => {
+              return <ProjectItem project={project} key={project.path} />;
             })}
         </Col>
       </Row>
@@ -20,4 +20,4 @@ const ServiceList = ({ services }) => {
   );
 };
 
-export default ServiceList;
+export default ProjectList;
