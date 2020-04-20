@@ -4,10 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const useFetch = (
-  { initialData }: { initialData: any },
-  { initialUrl }: { initialUrl: any }
-) => {
+const useFetch = (initialData: string[], initialUrl: string) => {
   const [about, setAbout] = useState(initialData);
   const [url] = useState(initialUrl);
   const [isLoading, setIsLoading] = useState(false);
@@ -36,8 +33,8 @@ const useFetch = (
 };
 
 const About = () => {
-  const results: any = [];
-  const url: any = "https://api.sammysamkough.com/api/users/show";
+  const results: string[] = [];
+  const url: string = "https://api.sammysamkough.com/api/users/show";
 
   const [{ about, isLoading, isError }] = useFetch(results, url);
 

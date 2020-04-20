@@ -6,10 +6,7 @@ import Col from "react-bootstrap/Col";
 
 import ServiceList from "../../components/services/ServiceList";
 
-const useFetch = (
-  { initialData }: { initialData: any },
-  { initialUrl }: { initialUrl: any }
-) => {
+const useFetch = (initialData: string[], initialUrl: string) => {
   const [services, setServices] = useState(initialData);
   const [url] = useState(initialUrl);
   const [isLoading, setIsLoading] = useState(false);
@@ -40,8 +37,8 @@ const useFetch = (
 };
 
 const Services = () => {
-  const results: any = [];
-  const url: any = "https://api.sammysamkough.com/api/services";
+  const results: string[] = [];
+  const url: string = "https://api.sammysamkough.com/api/services";
 
   const [{ services, isLoading, isError }] = useFetch(results, url);
 

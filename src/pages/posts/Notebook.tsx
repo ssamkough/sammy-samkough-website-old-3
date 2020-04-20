@@ -6,10 +6,7 @@ import Col from "react-bootstrap/Col";
 
 import PostList from "../../components/posts/PostList";
 
-const useFetch = (
-  { initialData }: { initialData: any },
-  { initialUrl }: { initialUrl: any }
-) => {
+const useFetch = (initialData: string[], initialUrl: string) => {
   const [posts, setPosts] = useState(initialData);
   const [url] = useState(initialUrl);
   const [isLoading, setIsLoading] = useState(false);
@@ -40,8 +37,8 @@ const useFetch = (
 };
 
 const Notebook = () => {
-  const results: any = [];
-  const url: any = "https://api.sammysamkough.com/api/posts";
+  const results: string[] = [];
+  const url: string = "https://api.sammysamkough.com/api/posts";
 
   const [{ posts, isLoading, isError }] = useFetch(results, url);
 
