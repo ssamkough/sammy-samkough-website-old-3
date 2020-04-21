@@ -2,7 +2,7 @@ import React from "react";
 
 class Photos extends React.Component {
   state = {
-    user: ""
+    user: "",
   };
 
   async componentDidMount() {
@@ -14,10 +14,9 @@ class Photos extends React.Component {
       <div>
         <h3>photos</h3>
         <br></br>
-        <h5>
-          <a href="http://instagram.com/samkotos">@samkotos</a>
-        </h5>
-        <p>Photos Coming Soon :)</p>
+        <h6>
+          <a href="http://instagram.com/samkotos">instagram</a>
+        </h6>
       </div>
     );
   }

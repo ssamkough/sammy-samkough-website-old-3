@@ -42,8 +42,13 @@ const About = () => {
     <Container>
       <Row>
         <Col>
+          <br />
           <h3>about</h3>
-          <br></br>
+          <br />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
           {isError && <div>Something Went Wrong! Fixing it Right Away!</div>}
           {isLoading ? (
             <div>About Me Coming Soon :)</div>

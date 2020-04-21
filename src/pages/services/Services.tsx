@@ -44,10 +44,15 @@ const Services = () => {
 
   return (
     <Container>
+      <Row>
+        <Col>
+          <br />
+          <h3>services</h3>
+          <br />
+        </Col>
+      </Row>
       <Row className="justify-content-center align-items-center">
         <Col sm="auto" md="auto" lg="auto">
-          <h3>services</h3>
-          <br></br>
           {isError && <div>Something Went Wrong! Fixing it Right Away!</div>}
           {isLoading ? (
             <div>Services Coming Soon :)</div>
