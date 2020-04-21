@@ -2,7 +2,7 @@ import React from "react";
 
 class Music extends React.Component {
   state = {
-    user: ""
+    user: "",
   };
 
   async componentDidMount() {
@@ -16,10 +16,16 @@ class Music extends React.Component {
       <div>
         <h3>music</h3>
         <br></br>
-        <h5>
-          <a href="https://open.spotify.com/user/samkough">@samkough</a>
-        </h5>
-        <p>Music Coming Soon :)</p>
+        <h6>
+          <ul className="music-list">
+            <li>
+              <a href="https://open.spotify.com/user/samkough">spotify</a>
+            </li>
+            <li>
+              <a href="https://soundcloud.com/ssamkough">soundcloud</a>
+            </li>
+          </ul>
+        </h6>
       </div>
     );
   }
