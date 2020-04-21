@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const Project = ({ props }: { props: any }) => {
+const Project = (props: any) => {
   const project = props.location.state;
   return (
     <Container>
