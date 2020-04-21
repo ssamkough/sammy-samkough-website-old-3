@@ -8,7 +8,10 @@ class NavBar extends React.Component {
     const hamburgerNavbar: HTMLElement = document.getElementById(
       "hamburger-navbar"
     )!;
-    hamburgerNavbar.click();
+
+    if (hamburgerNavbar.offsetWidth > 0) {
+      hamburgerNavbar.click();
+    }
   }
 
   render() {
