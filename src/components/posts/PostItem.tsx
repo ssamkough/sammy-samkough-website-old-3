@@ -9,7 +9,7 @@ const PostItem = ({ post }: { post: any }) => {
       <Card.Header>{post.date}</Card.Header>
       <Card.Body>
         <Card.Title>{post.title}</Card.Title>
-        <Card.Text>{post.content}</Card.Text>
+        <Card.Text>{post.snippet}</Card.Text>
         <Link to={{ pathname: "/post/" + post.path, state: post }}>
           <Button variant="outline-secondary">View Post</Button>
         </Link>
