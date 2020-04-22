@@ -41,11 +41,17 @@ a:active {
   margin-right: 10vw;
 }
 
+.entity-header-text {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 3vh;
+}
+
 .entity-text-wall {
   text-align: left;
   line-height: 2em;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .entity-details-divider {
@@ -75,8 +81,13 @@ a:active {
   color: #000000;
 }
 
+.post-content-line {
+  margin-bottom: 20px;
+}
+
 .entity-card {
   width: 40rem;
+  margin-bottom: 20px;
 }
 
 /* MEDIA QUERIES */
