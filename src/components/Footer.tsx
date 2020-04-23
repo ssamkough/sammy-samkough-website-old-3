@@ -5,7 +5,9 @@ import {
   faGithubAlt,
   faLinkedinIn,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faYoutube,
+  faSoundcloud,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -39,9 +41,18 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/ssamkough"
+            href="https://www.youtube.com/channel/UCtQb99m0ea57g8gYQcNuidA"
           >
-            <FontAwesomeIcon icon={faTwitter} size="lg" />
+            <FontAwesomeIcon icon={faYoutube} size="lg" />
+          </a>
+        </li>
+        <li className="handle">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://soundcloud.com/ssamkough"
+          >
+            <FontAwesomeIcon icon={faSoundcloud} size="lg" />
           </a>
         </li>
         <li className="handle">
@@ -51,6 +62,15 @@ const Footer = () => {
             href="https://instagram.com/samkotos"
           >
             <FontAwesomeIcon icon={faInstagram} size="lg" />
+          </a>
+        </li>
+        <li className="handle">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ssamkough"
+          >
+            <FontAwesomeIcon icon={faTwitter} size="lg" />
           </a>
         </li>
       </ul>
