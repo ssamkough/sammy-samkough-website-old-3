@@ -5,9 +5,6 @@ import Col from "react-bootstrap/Col";
 
 const Post = (props: any) => {
   const post = props.location.state;
-  // const content = post.content.replace(/https:\/\/[^\s]*/g, (match: string) => {
-  //   return <a href="{match}"></a>;
-  // });
   return (
     <Container>
       <br></br>
