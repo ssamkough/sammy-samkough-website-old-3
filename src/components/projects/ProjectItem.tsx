@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
 
 const ProjectItem = ({ project }: { project: any }) => {
   return (
@@ -10,9 +9,7 @@ const ProjectItem = ({ project }: { project: any }) => {
       <Card.Body>
         <Card.Title>{project.title}</Card.Title>
         <Card.Text>{project.content}</Card.Text>
-        <Link to={{ pathname: "/project/" + project.path, state: project }}>
-          <Button variant="outline-secondary">View Project</Button>
-        </Link>
+        <a target="_blank" rel="noopener noreferrer" href={project.url}><Button variant="outline-secondary">View Project</Button></a>
       </Card.Body>
       <Card.Footer>{project.tags}</Card.Footer>
     </Card>
