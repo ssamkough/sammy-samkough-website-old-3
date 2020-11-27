@@ -30,3 +30,7 @@ My original website was done in Wordpress which didn't make me happy, so now I'm
 - [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
 - [Migrating from JavaScript](https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html)
 - [Fixing 404 Errors w/ React SPA on Netlify](https://stackoverflow.com/questions/58065603/netlify-renders-404-on-page-refresh-using-react-and-react-router)
+
+## Todo 🔫
+
+- Add apparel (samkoccinos, hype beasts, etc.)
