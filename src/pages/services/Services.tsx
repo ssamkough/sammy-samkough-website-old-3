@@ -3,6 +3,7 @@ import axios from "axios";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Loader from "react-loader-spinner";
 
 import ServiceList from "../../components/services/ServiceList";
 
@@ -55,7 +56,7 @@ const Services = () => {
         <Col sm="auto" md="auto" lg="auto">
           {isError && <div>Something Went Wrong! Fixing it Right Away!</div>}
           {isLoading ? (
-            <div>Services Coming Soon :)</div>
+            <Loader type="TailSpin" color="#212529" height={100} width={100} />
           ) : (
             <ServiceList services={services} />
           )}

@@ -3,6 +3,7 @@ import axios from "axios";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Loader from "react-loader-spinner";
 
 const useFetch = (initialData: string[], initialUrl: string) => {
   const [about, setAbout] = useState(initialData);
@@ -51,7 +52,7 @@ const About = () => {
         <Col>
           {isError && <div>Something Went Wrong! Fixing it Right Away!</div>}
           {isLoading ? (
-            <div>About Me Coming Soon :)</div>
+            <Loader type="TailSpin" color="#212529" height={100} width={100} />
           ) : (
             <div className="text-wall">
               {about &&
