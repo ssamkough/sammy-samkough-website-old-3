@@ -1,6 +1,9 @@
-export default {
+module.exports = {
+  useTabs: false,
+  printWidth: 100,
   tabWidth: 2,
-  semi: true,
   singleQuote: true,
-  trailingComma: "es5"
+  trailingComma: 'all',
+  bracketSameLine: false,
+  arrowParens: 'always',
 };

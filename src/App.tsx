@@ -1,19 +1,18 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
-
-import Home from "./pages/Home";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 import About from "./pages/About";
-import Notebook from "./pages/posts/Notebook";
-import Projects from "./pages/projects/Projects";
-import Services from "./pages/services/Services";
-import Photos from "./pages/Photos";
+import Home from "./pages/Home";
 import Music from "./pages/Music";
+import Photos from "./pages/Photos";
+import Notebook from "./pages/posts/Notebook";
 import PostDetails from "./pages/posts/PostDetails";
 import ProjectDetails from "./pages/projects/ProjectDetails";
+import Projects from "./pages/projects/Projects";
 import ServiceDetails from "./pages/services/ServiceDetails";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import Services from "./pages/services/Services";
 
 const App = () => {
   return (
