@@ -4,6 +4,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sam</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <style>
+      .photo-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 400px;
+        height: 400px;
+        padding: 1em;
+        border: 2px solid black;
+        border-radius: 2px;
+      }
+      .img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
   </head>
   <body>
     <div style="width: 100vw; height: 100vh">
@@ -17,56 +39,19 @@
         "
       >
         <div
+          id="photos-container"
           style="
+            height: 100%;
             margin: auto;
             display: flex;
             align-items: center;
             gap: 20px;
             padding: 6em 2em;
+            overflow-y: hidden;
           "
-        >
-          <img
-            src="./assets/mc-bros.avif"
-            alt="picture of the original minecraft bros. - marej and i"
-            style="width: 100%"
-          />
-          <img
-            src="./assets/evil-adam.avif"
-            alt="adam in his most evil form"
-            style="width: 45%"
-          />
-          <img
-            src="./assets/me-and-mama.avif"
-            alt="my mama and i when i was a baby with sunglasses on my face sillily"
-            style="width: 100%"
-            loading="lazy"
-          />
-          <img
-            src="./assets/nailsss.avif"
-            alt="on the trip, right before raising canes, we toasted with our beautiful nails"
-            style="width: 45%"
-            loading="lazy"
-          />
-          <img
-            src="./assets/ogs-with-tete.avif"
-            alt="the og squad, rami, my bro and i with our wonderful late tete"
-            style="width: 100%"
-            loading="lazy"
-          />
-          <img
-            src="./assets/baba-cant-eat.avif"
-            alt="baba eating like a maniac beacuse he doesnt care about making a sense"
-            style="width: 80%"
-            loading="lazy"
-          />
-          <img
-            src="./assets/milo.png"
-            alt="probably the cutest picture of my dog, milo, ever"
-            style="width: 80%"
-            loading="lazy"
-          />
-        </div>
+        ></div>
       </div>
     </div>
+    <script src="./scripts/photos.js"></script>
   </body>
 </html>
