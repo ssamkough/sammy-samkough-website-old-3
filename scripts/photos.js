@@ -1,31 +1,39 @@
 const array = [
   {
-    src: "./assets/mc-bros.avif",
+    src: "./assets/mc-bros.png",
     alt: "the original minecraft bros. - marej and i",
   },
   {
-    src: "./assets/evil-adam.avif",
+    src: "./assets/evil-adam.png",
     alt: "adam in his most evil form",
   },
   {
-    src: "./assets/me-and-mama.avif",
+    src: "./assets/me-and-mama.png",
     alt: "my mama and i when i was a baby with sunglasses on my face sillily",
   },
   {
-    src: "./assets/nailsss.avif",
+    src: "./assets/nailsss.png",
     alt: "on the trip, right before raising canes, we toasted with our beautiful nails",
   },
   {
-    src: "./assets/ogs-with-tete.avif",
+    src: "./assets/ogs-with-tete.png",
     alt: "the og squad, rami, my bro and i with our wonderful late tete",
   },
   {
-    src: "./assets/baba-cant-eat.avif",
+    src: "./assets/baba-cant-eat.png",
     alt: "baba eating like a maniac beacuse he doesnt care about making a sense",
   },
   {
     src: "./assets/milo.png",
     alt: "probably the cutest picture of my dog, milo, ever",
+  },
+  {
+    src: "./assets/my-beloved-lil-one.png",
+    alt: "lil sister and i. i love her too much",
+  },
+  {
+    src: "./assets/mc-bros-soccer.png",
+    alt: "a perfectly captured picture of big mc bro and i that's accurate even until today",
   },
 ];
 
