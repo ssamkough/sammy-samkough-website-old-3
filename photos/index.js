@@ -38,31 +38,49 @@ const array = [
 ];
 
 const photosFragment = document.createDocumentFragment();
+const mainContainer = document.getElementById("photos-container");
 
 for (let i = 0; i < array.length; i++) {
   const { src, alt } = array[i];
-  const container = document.createElement("div");
-  container.className = "photo-container";
-
-  const imgContainer = document.createElement("div");
-  imgContainer.className = "img-container";
 
   const img = document.createElement("img");
-  img.className = "img";
+  img.className = "img-photo";
   img.src = src;
   img.alt = alt;
+  img.width = 100;
+  img.height = 100;
+
+  img.onclick = () => {
+    mainContainer.style.display = "none";
+
+    const figure = document.getElementById("photo-figure");
+    figure.style.display = "flex";
+
+    const figureImg = document.createElement("img");
+    figureImg.src = src;
+    figureImg.alt = alt;
+    figureImg.width = 300;
+    figureImg.height = 300;
+
+    const figureCaption = document.createElement("figcaption");
+    figureCaption.innerHTML = alt;
+
+    const figureBackButton = document.createElement("button");
+    figureBackButton.innerHTML = "Back";
+    figureBackButton.onclick = () => {
+      figure.style.display = "none";
+      mainContainer.style.display = "block";
+      window.location.reload();
+    };
+
+    figure.append(figureImg);
+    figure.append(figureCaption);
+    figure.append(figureBackButton);
+  };
+
   if (i > 4) img.loading = "lazy";
 
-  const span = document.createElement("span");
-  span.innerHTML = alt;
-
-  imgContainer.appendChild(img);
-
-  container.appendChild(imgContainer);
-  container.appendChild(span);
-
-  photosFragment.appendChild(container);
+  photosFragment.appendChild(img);
 }
 
-const mainContainer = document.getElementById("photos-container");
 mainContainer.appendChild(photosFragment);
