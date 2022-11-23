@@ -24,13 +24,14 @@ template.innerHTML = `
     list-style-type: none;
   }
 </style>
+
 <footer>
   <ul>
     <li><a href="about.html">about</a></li>
-    <li><a href="./projects.html">projects</a></li>
-    <li><a href="./works.html">works</a></li>
-    <li><a href="./volunteering.html">volunteering</a></li>
-    <li><a href="./photos.html">photos</a></li>
+    <li><a href="projects.html">projects</a></li>
+    <li><a href="works.html">works</a></li>
+    <li><a href="volunteering.html">volunteering</a></li>
+    <li><a href="photos.html">photos</a></li>
     <li><a href="writings.html">writings</a></li>
     <li><a href="contact.html">contact</a></li>
   </ul>
