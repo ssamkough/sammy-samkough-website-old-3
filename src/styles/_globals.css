@@ -1,19 +1,9 @@
 body {
-  padding: 80px;
+  padding: 20px;
 }
 
 main {
   flex: 1;
-}
-
-footer > ul {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-footer > ul > li {
-  list-style-type: none;
 }
 
 h1 {
