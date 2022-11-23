@@ -11,6 +11,7 @@
 ### media
 
 - https://practicaltypography.com/system-fonts.html
+- https://thegimptutorials.com/how-to-make-pixel-art/
 
 ### inspirations
 
