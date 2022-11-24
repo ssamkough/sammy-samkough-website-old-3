@@ -15,6 +15,7 @@
 
 ### inspirations
 
+- https://gyford.com
 - https://www.jwz.org
 - https://matthewbutterick.com
 - https://www.stephendiehl.com

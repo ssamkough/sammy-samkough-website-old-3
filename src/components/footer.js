@@ -33,7 +33,7 @@ template.innerHTML = `
     <li><a href="volunteering.html">volunteering</a></li>
     <li><a href="photos.html">photos</a></li>
     <li><a href="writings.html">writings</a></li>
-    <li><a href="follows.html">follows</a></li>
+    <li><a href="directory.html">directory</a></li>
     <li><a href="links.html">links</a></li>
     <li><a href="contact.html">contact</a></li>
   </ul>
