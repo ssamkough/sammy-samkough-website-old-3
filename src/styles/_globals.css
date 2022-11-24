@@ -6,37 +6,10 @@ main {
   flex: 1;
 }
 
-h1 {
-  font-family: "Athelas", Calibri;
-}
-
-a {
-  transition: 0.2s ease-in;
-  text-decoration: none;
-  color: blue;
-  outline-color: purple;
-}
-
-a:hover {
-  filter: hue-rotate(120deg);
-}
-
-header {
-  font-family: "Athelas", Calibri;
-}
-
-header > h1 > a {
-  color: black;
-}
-
-header > h1 > a:hover {
-  color: crimson;
-}
-
 #root {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
