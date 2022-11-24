@@ -27,11 +27,11 @@ template.innerHTML = `
 
 <footer>
   <ul>
-    <li><a href="./about.html">about</a></li>
-    <li><a href="./thoughts.html">thoughts</a></li>
-    <li><a href="./writings.html">writings</a></li>
-    <li><a href="./projects.html">projects</a></li>
-    <li><a href="./works.html">works</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="thoughts.html">thoughts</a></li>
+    <li><a href="writings.html">writings</a></li>
+    <li><a href="projects.html">projects</a></li>
+    <li><a href="works.html">works</a></li>
     <li><a href="volunteering.html">volunteering</a></li>
     <li><a href="photos.html">photos</a></li>
     <li><a href="videos.html">videos</a></li>
