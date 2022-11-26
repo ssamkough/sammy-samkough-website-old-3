@@ -1,0 +1,69 @@
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sammy | videos</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/favicons/favicon.ico" />
+    <link rel="stylesheet" href="../../styles/_variables.css" />
+    <link rel="stylesheet" href="../../styles/_reset.css" />
+    <link rel="stylesheet" href="../../styles/_globals.css" />
+    <link rel="stylesheet" href="../../styles/videos.css" />
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <div id="root">
+        <main>
+            <h1>hannan bday 2022</h1>
+            <div style="width: 200px; height: 200px; border: 2px solid black;">
+                <img src="./videos/1.jpg" width="100%" height="100%"
+                style="object-fit: contain; transition: .4s ease-in;" />
+            </div>
+            <progress max="8" value="0"></progress>
+            <button onclick="start()">start</button>
+            <button onclick="reset()">reset</button>
+        </main>
+    </div>
+    <script>
+        const image = document.getElementsByTagName("img")[0];
+        const progress = document.getElementsByTagName("progress")[0];
+        let timeoutId;
+
+        function start() {
+            if (timeoutId) return;
+
+            timeoutId = setInterval(() => {
+                const currentImageSource = image.src;
+                const prefix = currentImageSource.slice(0, -5);
+                const number = Number(currentImageSource.charAt(currentImageSource.length - 5)) + 1;
+                const newImageSource = prefix + number + '.jpg';
+                image.src = newImageSource;
+
+                const currentProgressValue = progress.value;
+                progress.value = currentProgressValue + 1;
+                
+                if (number === 9) {
+                    clearInterval(timeoutId);
+                }
+            }, 800)
+        }
+
+        function reset() {
+            clearInterval(timeoutId);
+
+            const currentImageSource = image.src;
+            const prefix = currentImageSource.slice(0, -5);
+            const number = 1;
+            const newImageSource = prefix + number + '.jpg';
+            image.src = newImageSource;
+
+            progress.value = 0;
+
+            timeoutId = null;
+        }
+    </script>
+</body>
+
+</html>
