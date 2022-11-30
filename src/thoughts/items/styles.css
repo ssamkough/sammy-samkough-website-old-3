@@ -1,0 +1,10 @@
+main {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+main > p {
+  line-height: 1.6em;
+}

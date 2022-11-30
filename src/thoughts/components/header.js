@@ -35,7 +35,7 @@ headerTemplate.innerHTML = `
 </style>
 
 <header>
-  <h1><a class="page-link" href="../index/index.html">sammy samkough</a><span class="page-name"></span></h1>
+  <h1><a href="../index/index.html">sammy samkough</a><span class="page-name"></span></h1>
   <slot />
 </header>
 `;
@@ -46,16 +46,8 @@ class Header extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(headerTemplate.content.cloneNode(true));
 
-    this.shadowRoot.querySelector(".page-name").innerText = this.getAttribute(
-      "page-name"
-    )
-      ? " | " + this.getAttribute("page-name")
-      : "";
-
-    const hrefAttribute = this.getAttribute("href");
-    if (hrefAttribute) {
-      this.shadowRoot.querySelector(".page-link").href = hrefAttribute;
-    }
+    this.shadowRoot.querySelector(".page-name").innerText =
+      this.getAttribute("page-name") ? ' | ' + this.getAttribute("page-name") : "";
   }
 }
 

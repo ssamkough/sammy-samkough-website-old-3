@@ -1,0 +1,22 @@
+<rss version="2.0">
+    <channel>
+        <title>sammy samkough's thoughts</title>
+        <link>https://sammy.pizza/thoughts/index.html</link>
+        <description>sammy samkough's thoughts</description>
+        <language>en-us</language>
+        <docs>https://www.rssboard.org/rss-specification</docs>
+        <managingEditor>sammysamkough@gmail.com</managingEditor>
+        <webMaster>sammysamkough@gmail.com</webMaster>
+        <item>
+            <title>first thought</title>
+            <link>http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp</link>
+            <description>
+                How do Americans get ready to work with Russians aboard the International Space Station? They take a crash course in culture, language and protocol at Russia's
+                <a href="http://howe.iki.rssi.ru/GCTC/gctc_e.htm">Star City</a>
+                .
+            </description>
+            <pubDate>Tue, 03 Jun 2003 09:39:21 GMT</pubDate>
+            <guid>http://liftoff.msfc.nasa.gov/2003/06/03.html#item573</guid>
+        </item>
+    </channel>
+</rss>
