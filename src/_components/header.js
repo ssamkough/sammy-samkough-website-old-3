@@ -35,7 +35,7 @@ headerTemplate.innerHTML = `
 </style>
 
 <header>
-  <h1><a href="./index.html">sammy samkough</a><span class="page-name"></span></h1>
+  <h1><a href="../index/index.html">sammy samkough</a><span class="page-name"></span></h1>
   <slot />
 </header>
 `;
