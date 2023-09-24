@@ -28,17 +28,7 @@ template.innerHTML = `
 <footer>
   <ul>
     <li><a href="../about/index.html">about</a></li>
-    <li><a href="../thoughts/index.html">thoughts</a></li>
-    <li><a href="../writings/index.html">writings</a></li>
-    <li><a href="../projects/index.html">projects</a></li>
-    <li><a href="../works/index.html">works</a></li>
-    <li><a href="../volunteering/index.html">volunteering</a></li>
     <li><a href="../photos/index.html">photos</a></li>
-    <li><a href="../videos/index.html">videos</a></li>
-    <li><a href="../directory/index.html">directory</a></li>
-    <li><a href="../links/index.html">links</a></li>
-    <li><a href="../contact/index.html">contact</a></li>
-    <li><a href="../meta/index.html">meta</a></li>
   </ul>
 </footer>
 `;
